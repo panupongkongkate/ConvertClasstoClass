@@ -39,10 +39,10 @@ namespace ConsoleApp1
             employee emp5 = utility.ConvertClass<employee>(cus);
 
             //วิธีที่ 6 ฟังชั้น
-            employee emp6 = utility.ConvertGlobloClass<employee>(cus);
+            employee emp6 = utility.ConvertglobalClass<employee>(cus);
 
             //วิธีที่ 7 ฟังชั้น
-            employee emp7 = cus.ConvertGlobloClass<employee>();
+            employee emp7 = cus.ConvertglobalClass<employee>();
 
 
             Console.WriteLine(emp);
