@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+
 using static ConsoleApp1.datamodal;
 
 namespace ConsoleApp1
@@ -57,5 +58,6 @@ namespace ConsoleApp1
                 return default;
             }
         }
+
     }
 }

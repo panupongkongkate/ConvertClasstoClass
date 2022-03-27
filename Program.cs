@@ -1,10 +1,13 @@
 ﻿using AutoMapper;
+using Mapster;
+using MapsterMapper;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using static ConsoleApp1.datamodal;
+using Mapper = AutoMapper.Mapper;
 
 namespace ConsoleApp1
 {
@@ -45,11 +48,14 @@ namespace ConsoleApp1
             employee emp4 = JsonConvert.DeserializeObject<employee>(JsonConvert.SerializeObject(cus));
 
 
-            //วิธีที่ 5 ฟังชั้น
-            employee emp5 = utility.ConvertClass<employee>(cus);
+            //วิธีที่ 8 ฟังชั้น
+            employee emp8 = emp5.Adapt<employee>();
 
             //วิธีที่ 6 ฟังชั้น
             employee emp6 = utility.ConvertglobalClass<employee>(cus);
+
+
+
 
 
 
