@@ -19,6 +19,16 @@ namespace ConsoleApp1
             var cus = new customer();
             cus.firstname = "John";
             cus.age = 3;
+
+            //วิธีที่ 5 ฟังชั้น
+            employee emp5 = utility.ConvertClass<employee>(cus);
+
+
+            //วิธีที่ 7 ฟังชั้น
+            employee emp7 = cus.ConvertglobalClass<employee>();
+
+
+
             //วิธีที่ 1 extension
             employee emp = new employee
             {
@@ -41,8 +51,7 @@ namespace ConsoleApp1
             //วิธีที่ 6 ฟังชั้น
             employee emp6 = utility.ConvertglobalClass<employee>(cus);
 
-            //วิธีที่ 7 ฟังชั้น
-            employee emp7 = cus.ConvertglobalClass<employee>();
+
 
 
             Console.WriteLine(emp);
